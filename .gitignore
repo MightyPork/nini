@@ -1,0 +1,6 @@
+*.obj
+*.so
+*.out
+*.a
+CMakeLists.txt
+cmake-build-*/
