@@ -18,8 +18,10 @@ When compiled for a bare metal Cortex-M0, **the whole parser fits in 336 bytes**
 
 Any whitespace, except inside a value, is discarded.
 
-- **Sections** - `[section.name]`
-- **Key-value pairs** - `key.foo-bar_baz123 = value lorem ipsum 123`
+- **Sections** - `[section]`
+  - Supports any characters except whitespace and `]`
+- **Key-value pairs** - `key = value`
+  - Key supports any characters except whitespace and `=`
   - Value can contain whitespace, leading and trailing whitespace is removed.
   - Ends with either `\r` or `\n`
 - **Comment** `# comment ...`
